@@ -1,7 +1,17 @@
 body
 {
-	width: 90%;
+	width: 98%;
 	margin: auto auto;
-	background-color: #F0F0F0;
 }
 
+#main
+{
+	width: 85%;
+	margin: auto auto;
+	background-color: grey;
+}
+
+#header
+{
+	
+}
