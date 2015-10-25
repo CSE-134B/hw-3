@@ -15,3 +15,54 @@ body
 {
 	
 }
+
+.savehabit-btn {
+    background: gray; 
+    padding: 10px; 
+    height: 15px; 
+    width: 150px;  
+    margin: auto;
+}
+
+.savehabit-btn > a {
+    text-decoration: none;
+    color: black;
+}
+
+.day-btn {
+	width: 20px;
+    height: 20px;
+	float: left;
+	margin: 5px;
+    padding: 5px;
+	text-align: center;
+	color: black;
+    background-color: lightgrey;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.day-btn:active, .time-btn:active {
+    border: 2px solid yellow;
+}
+
+.buttonactive {
+    border: 2px solid yellow;
+}
+
+.time-btn {
+    width: 20px;
+    height: 20px;
+	float: left;
+	margin: 5px;
+    padding: 5px;
+	text-align: center;
+	color: black;
+    background-color: lightgrey;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+}

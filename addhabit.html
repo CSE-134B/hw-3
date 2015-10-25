@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Edit a Habit</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+        <!--Frequency-->
+        <div id="freq" style="padding-bottom: 10px; padding-top: 10px; margin-bottom: 2%">
+            <h4>Frequency</h4>
+                <span class="day-btn">Su</span>
+                <span class="day-btn">M</span>
+                <span class="day-btn">T</span>
+                <span class="day-btn">W</span>
+                <span class="day-btn">Th</span>
+                <span class="day-btn">F</span>
+                <span class="day-btn">S</span>
+        </div>
+        
+        <!--Times per day-->
+        <div style="margin-top: 50px; margin-bottom: 50px;">
+            <span class="time-btn">1</span>
+            <span class="time-btn">2</span>
+            <span class="time-btn">3</span>
+            <span><h4>Times per day</h4></span>
+        </div>
+        
+        <div class="savehabit-btn">
+            <a href="habits.html">
+            <p style="align: center; margin: auto; width: 45px">save it</p>
+            </a>
+        </div>
+        
+          
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        
+         <script type="text/javascript">
+            $('.time-btn').click(function() {  
+                $('.time-btn').not(this).removeClass('buttonactive');
+                $(this).toggleClass('buttonactive'); 
+            });
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.day-btn').click(function() {       
+                $(this).toggleClass('buttonactive');
+            });
+        }); 
+        </script>
+        
+    </body>
+</html>
+
