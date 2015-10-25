@@ -16,6 +16,12 @@ body
 	
 }
 
+#freq {
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+    margin-bottom: 2%
+}
+
 .savehabit-btn {
     background: gray; 
     padding: 10px; 
@@ -30,18 +36,37 @@ body
 }
 
 .day-btn {
-	width: 20px;
-    height: 20px;
+	width: 70px;
+    height: 70px;
 	float: left;
-	margin: 5px;
+	margin: 10px;
     padding: 5px;
 	text-align: center;
+    font-size: 40px;
 	color: black;
     background-color: lightgrey;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	cursor: pointer;
+	cursor: pointer;   
+}
+
+@media only screen and (max-width: 480px) {
+    .day-btn {
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin: 3px;
+        padding: 3px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        background-color: lightgrey;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
 }
 
 .day-btn:active, .time-btn:active {
@@ -53,16 +78,53 @@ body
 }
 
 .time-btn {
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
 	float: left;
-	margin: 5px;
+	margin: 15px;
     padding: 5px;
 	text-align: center;
+    font-size: 40px;
 	color: black;
     background-color: lightgrey;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .time-btn {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        background-color: lightgrey;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.timelabel {
+    padding: 50px; width: 150px; height: 50px; padding-left: 25px
+}
+
+@media only screen and (max-width: 480px) {
+    .timelabel {
+        padding: 5px; width: 90px; height: 32px; padding-left: 5px; padding-top: 12px; font-size: 15px;
+    }
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }

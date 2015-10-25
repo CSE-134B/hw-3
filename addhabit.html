@@ -8,26 +8,38 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     
-    <body>
+    <body style="width: 75%">
         
         <!--Frequency-->
-        <div id="freq" style="padding-bottom: 10px; padding-top: 10px; margin-bottom: 2%">
-            <h4>Frequency</h4>
-                <span class="day-btn">Su</span>
-                <span class="day-btn">M</span>
-                <span class="day-btn">T</span>
-                <span class="day-btn">W</span>
-                <span class="day-btn">Th</span>
-                <span class="day-btn">F</span>
-                <span class="day-btn">S</span>
+        <div class="clearfix">
+            <div id="freq">
+                <h4>Frequency</h4>
+                    <span class="day-btn clearfix">Su</span>
+                    <span class="day-btn clearfix">M</span>
+                    <span class="day-btn clearfix">T</span>
+                    <span class="day-btn clearfix">W</span>
+                    <span class="day-btn clearfix">Th</span>
+                    <span class="day-btn clearfix">F</span>
+                    <span class="day-btn clearfix">S</span>
+            </div>
         </div>
-        
+        <br>
         <!--Times per day-->
-        <div style="margin-top: 50px; margin-bottom: 50px;">
+<!--        <div style="margin-top: 50px; margin-bottom: 50px; overflow: hidden">-->
+<!--
+        <div id="time">
             <span class="time-btn">1</span>
             <span class="time-btn">2</span>
             <span class="time-btn">3</span>
-            <span><h4>Times per day</h4></span>
+            <span>Times per day</span>
+        </div>
+-->
+          
+        <div class="clearfix">
+            <div style="float: left;" class="time-btn clearfix">1</div>
+            <div style="float: left;" class="time-btn clearfix">2</div>
+            <div style="float: left;" class="time-btn clearfix">3</div>
+            <div style="float: left;" class="timelabel clearfix">Times per day</div>
         </div>
         
         <div class="savehabit-btn">
