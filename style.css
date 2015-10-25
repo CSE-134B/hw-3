@@ -1,7 +1,8 @@
 body
 {
-	width: 98%;
+	width: 80%;
 	margin: auto auto;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
 .navbar {
@@ -16,17 +17,23 @@ body
 }
 
 .navbar > ul > li > a{
+	font-size:x-large;
 	text-decoration:none;
 	padding:5px 0;
-	width:100px;
-	background: #485e49;
+	width:24%;
+	height:40px;
+	line-height:40px;
+	background: linear-gradient(#485e49, #152B16); /*For gradient, take base color and subtract #333333 for darker part*/
 	color:#eee;
 	float:left;
 	text-align:center;
 	border-left:1px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 .navbar > ul > li > a:hover {
-	background:#a2b3a1;
+	background:linear-gradient(#a2b3a1, #6f806e);
 	color:#000;
 }
 
@@ -215,4 +222,46 @@ body
 #plusBtn img{
 	float: right;
 }
+
+
 /*-- habits.html stylesheet ---*/
+
+.completion-stats{
+
+}
+
+.edit-habit{
+
+}
+
+.add-habit-btn{
+	margin: auto auto;
+    display: block;
+    background-image: url("images/plus1.png");
+}
+
+.add-habit-btn:hover{
+    background-image: url("images/plus1-hover.png");
+}
+
+.time-icon {
+    width: 20px;
+    height: 20px;
+    line-height:20px;
+	float: left;
+	margin: 15px;
+    padding: 5px;
+	text-align: center;
+    font-size: 20px;
+	color: black;
+    background-color: lightgrey;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.time-icon-active{
+	border-style:solid;
+	border-width:1px;
+}

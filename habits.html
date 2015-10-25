@@ -6,44 +6,55 @@
 	</head>
 	<body>
 		<!-- Nav Bar -->
-		<div class="navbar">
+		<nav class="navbar">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Add Habit</a></li>
-				<li><a href="#">Login</a></li>
-			</ul>
-		</div>
+                <li><a href="frontpage.html">Home</a></li>
+                <li><a href="addhabit.html">Add Habit</a></li>
+                <li><a href="habits.html">Habits</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+		</nav>
 		<br />
 
 		<!--Habits Page -->
 
 		<div id="main">
+			<div class="habit">
 
-			<h4>Habit Title</h4>
+				<h4>Habit Title</h4>
 
-			<p>1</p>
+				<span class="time-icon time-icon-active">1</span>
+				<span class="time-icon ">2</span>
 
-			<img src="" alt="Habit Icon"/>
+				<img src="" alt="Habit Icon"/>
 
-			<img src="" alt="Completed"/>
+				<img src="images/Like-icon.png" width="50px" height="50px" alt="Completed"/>
 
-			<img src="" alt="Failed"/>
+				<img src="images/Dislike-icon.png"  width="50px" height="50px" alt="Failed"/>
 
 
-			<!-- Completion rate -->
+				<!-- Completion rate -->
+				<div class="completion-stats">
+					<h2>##%</h2>Completion rate <img src="images/Like-icon.png" width="75px" height="75px" alt="Completed Icon"/>
 
-			<h2>##%</h2>Completion rate <img src="" alt="Completed Icon"/>
+					<progress value="85" max="100">\</progress>
 
-			<progress value="85" max="100">\</progress>
+					<p>## in a row!</p>
 
-			<p>## in a row!</p>
+					<p>Record = ##</p>
+				</div>
 
-			<p>Record = ##</p>
+				<!-- Edit and Delete -->
+				<div class="edit-habit">
+					<a href="#"><img src="" alt="Edit"></a>
+					<a href="#"><img src="" alt="Delete"></a>
+				</div>
+				<hr />
+			</div>
 
-			<!-- Edit and Delete -->
 
-			<a href="#"><img src="" alt="Edit"></a>
-			<a href="#"><img src="" alt="Delete"></a>
+			<a class="add-habit-btn" href="addhabit.html">t</a>
+
 		</div>
 	</body>
 
