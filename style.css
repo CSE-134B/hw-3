@@ -4,18 +4,33 @@ body
 	margin: auto auto;
 }
 
-#main
-{
-	width: 85%;
-	margin: auto auto;
-	background-color: grey;
+.navbar {
 }
 
-#header
-{
-	
+.navbar > ul {
+	list-style-type: none;
 }
 
+.navbar > ul > li {
+	display:inline;
+}
+
+.navbar > ul > li > a{
+	text-decoration:none;
+	padding:5px 0;
+	width:100px;
+	background: #485e49;
+	color:#eee;
+	float:left;
+	text-align:center;
+	border-left:1px solid #fff;
+}
+.navbar > ul > li > a:hover {
+	background:#a2b3a1;
+	color:#000;
+}
+
+/*--- addhabit.html stylesheet ---*/
 .savehabit-btn {
     background: gray; 
     padding: 10px; 
@@ -67,28 +82,42 @@ body
 	cursor: pointer;
 }
 
-.navbar {
+<<<<<<< HEAD
+
+=======
+/*--- frontpage.html stylesheet ---*/
+#main {
+	width: 85%;
+	margin: auto auto;
+	margin-top: 100px;
 }
 
-.navbar > ul {
-	list-style-type: none;
+/*#header {
+	margin: 0;
+}*/
+
+#add-habit {
+    background: #C0C0C0; 
+    width: 160px; 
+    height: 40px; 
+    margin: auto;
+    text-align: center; 
+    border-radius: 2px;
+    display: block;      
+    text-align:center; 
+    line-height:40px; 
+    margin-top: 100px;
 }
 
-.navbar > ul > li {
-	display:inline;
+#add-habit a {
+    text-decoration: none;
+    font-family: Georgia, serif;
+    color: black;
 }
 
-.navbar > ul > li > a{
-	text-decoration:none;
-	padding:5px 0;
-	width:100px;
-	background: #485e49;
-	color:#eee;
-	float:left;
-	text-align:center;
-	border-left:1px solid #fff;
+#appName {
+	text-align: center;
+	font-family: Georgia, serif;
 }
-.navbar > ul > li > a:hover {
-	background:#a2b3a1;
-	color:#000;
-}
+
+/*-- habits.html stylesheet ---*/
