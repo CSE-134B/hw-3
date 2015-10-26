@@ -277,8 +277,15 @@ body
 
 /*-- habits.html stylesheet ---*/
 
+.completion-stats{
+	margin-top:10%;
+}
 .completion-stats > p{
 	display:inline;
+}
+
+.completed-failed-buts{
+	margin-top:10%;
 }
 
 .edit-habit > a{
@@ -329,8 +336,13 @@ body
 
 .record{
 	float:right;
+	margin-right: 20%;
 }
 
 .in-a-row{
 	float:left;
+}
+
+.completion-rate{
+	display:inline;
 }
