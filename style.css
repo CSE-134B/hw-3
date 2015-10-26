@@ -345,7 +345,7 @@ body
 
 .col3{
 	float:left;
-	width:18%;
+	width:30%;
 }
 @media only screen and (max-width: 600px) {
     .col3 {
