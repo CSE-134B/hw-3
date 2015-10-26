@@ -345,7 +345,12 @@ body
 
 .col3{
 	float:left;
-	width:30%;
+	width:15%;
+}
+@media only screen and (max-width: 600px) {
+    .col3 {
+        width:30%;
+    }
 }
 
 .record{
