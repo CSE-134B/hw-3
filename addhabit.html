@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Edit a Habit</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     
@@ -12,18 +13,28 @@
 
         <!-- Nav Bar -->
         <nav class="navbar">
+<!--
             <ul>
                 <li><a href="frontpage.html">Home</a></li>
                 <li><a href="addhabit.html">Add Habit</a></li>
                 <li><a href="habits.html">Habits</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
+-->
+            <ul>
+                <li><a href="frontpage.html"><img src="images/logo2.png" alt="" style="width: 85px; height: 80px"/></a></li>
+                <li><a href="addhabit.html" class="navlink">Add Habit</a></li>
+                <li><a href="habits.html" class="navlink">Habits</a></li>
+                <li><a href="#" class="navlink">Login</a></li>
+            </ul>
         </nav>
         <br />
+        
+        <div class="container">
         <!--habit title-->
         <div class="clearfix">
             <div id="habittitle">
-                <h4>Habit title</h4>
+                <h3>Habit title</h3>
                 <form>
                     <input type="text">
                 </form>
@@ -33,7 +44,7 @@
         <!--icon-->
         <div class="clearfix">
             <div id="icon">
-                <h4>Icon</h4>
+                <h3>Icon</h3>
                 <form>
                     <input type="image" src="images/basketball.png" alt="icon" width="128" height="128">
                     <input type="image" src="images/coffee.png" alt="icon" width="128" height="128">
@@ -53,7 +64,7 @@
         <!--Frequency-->
         <div class="clearfix">
             <div id="freq">
-                <h4>Frequency</h4>
+                <h3>Frequency</h3>
                     <span class="day-btn clearfix">Su</span>
                     <span class="day-btn clearfix">M</span>
                     <span class="day-btn clearfix">T</span>
@@ -78,7 +89,7 @@
             </a>
         </div>
         
-          
+         </div> 
         
         <script src="lib/jquery-1.11.3.min.js"></script>
         

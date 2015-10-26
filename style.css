@@ -1,11 +1,23 @@
+html {margin-top: 0;}
 body
 {
-	width: 80%;
-	margin: auto auto;
-	font-family: Tahoma, Geneva, sans-serif;
+/*	width: 80%;*/
+    width: 100%;
+    height: auto;
+/*	margin: auto auto;*/
+    margin: 0;
+    padding: 0;
+	font-family: 'Raleway', Tahoma, Geneva, sans-serif;
 }
-
+.container {
+    width: 80%;
+    margin: auto;
+}
 .navbar {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    background-color: #7A8B8B;
 }
 
 .navbar > ul {
@@ -15,6 +27,9 @@ body
 .navbar > ul > li {
 	display:inline;
 }
+.navbar > ul > li > a.navlink {
+    padding-top: 25px;
+}
 
 .navbar > ul > li > a{
 	font-size:x-large;
@@ -23,19 +38,20 @@ body
 	width:24%;
 	height:40px;
 	line-height:40px;
-	background: linear-gradient(#485e49, #152B16); /*For gradient, take base color and subtract #333333 for darker part*/
+	/*background: linear-gradient(#485e49, #152B16); *//*For gradient, take base color and subtract #333333 for darker part*/
 	color:#eee;
 	float:left;
 	text-align:center;
-	border-left:1px solid #fff;
+/*	border-left:1px solid #fff;*/
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 .navbar > ul > li > a:hover {
-	background:linear-gradient(#a2b3a1, #6f806e);
+/*	background:linear-gradient(#a2b3a1, #6f806e);*/
 	color:#000;
 }
+
 
 /*--- addhabit.html stylesheet ---*/
 #freq {
@@ -45,7 +61,7 @@ body
 }
 
 .savehabit-btn {
-    background: gray; 
+    background: #F0F37B; 
     padding: 10px; 
     height: 35px; 
     width: 250px;  
@@ -54,7 +70,7 @@ body
 
 @media only screen and (max-width: 480px) {
   .savehabit-btn {
-    background: gray; 
+    background: #F0F37B; 
     padding: 10px; 
     height: 15px; 
     width: 125px;  
@@ -86,7 +102,7 @@ body
 	text-align: center;
     font-size: 40px;
 	color: black;
-    background-color: lightgrey;
+    background-color: #72E5B8;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -102,8 +118,7 @@ body
         padding: 3px;
         text-align: center;
         font-size: 15px;
-        color: black;
-        background-color: lightgrey;
+        background-color: #72E5B8;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
         border-radius: 8px;
@@ -116,7 +131,7 @@ body
 }
 
 .buttonactive {
-    border: 2px solid yellow;
+    border: 3px solid #F0F37B;
 }
 
 .time-btn {
@@ -128,7 +143,7 @@ body
 	text-align: center;
     font-size: 40px;
 	color: black;
-    background-color: lightgrey;
+    background-color: #72E5B8;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -145,7 +160,7 @@ body
         text-align: center;
         font-size: 15px;
         color: black;
-        background-color: lightgrey;
+        background-color: #72E5B8;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         border-radius: 50%;
@@ -205,7 +220,7 @@ body
 }
 
 #add-habit {
-    background: #C0C0C0; 
+    background: #7A8B8B; 
     width: 250px; 
     height: 40px; 
     margin: auto;
@@ -221,6 +236,7 @@ body
     text-decoration: none;
     font-family: Georgia, serif;
     color: white;
+    background: #7A8B8B;
 }
 
 #plusBtn {
