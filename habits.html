@@ -173,8 +173,8 @@
             });
 
             $('.failed-but').click(function() {  
-                $('.completed-failed-buts').hide();
-                $('.completion-stats').show(); 
+                $(this).parents('.completed-failed-buts').hide();
+                $(this).parent().siblings('.completion-stats').show(); 
             });
 
             $('.delete-habit-but').click(function(){
