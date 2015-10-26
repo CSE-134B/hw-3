@@ -366,10 +366,10 @@ body
 	display:inline;
 }
 
-<<<<<<< HEAD
+
 #icon {
 	margin-top: 15px;
-=======
+}
 #habittitle{
     padding-bottom: 10px; 
     padding-top: 10px; 
@@ -379,7 +379,6 @@ body
     padding-bottom: 10px; 
     padding-top: 10px; 
     margin-bottom: 2%
->>>>>>> origin/master
 }
 
 #icon input{
