@@ -23,9 +23,105 @@
 		<div id="main">
 			<div class="habit">
 				<div class="col1">
-					<h4>Habit Title</h4>
+					<h4>Wake Up On Time</h4>
 
 					<img  height="90%" width="90%" src="images/clock.png" alt="Habit Icon"/>
+				</div>
+
+				<div class="col2">
+
+					<div class="completed-failed-buts">
+						<img class="completed-but" src="images/Like-icon.png" width="35%" height="35%" alt="Completed"/>
+						<img class="failed-but"src="images/Dislike-icon.png"  width="35%" height="35%" alt="Failed"/>
+					</div>
+
+					<!-- Completion rate -->
+					<div class="completion-stats">
+						<h1 class="completion-rate">##%</h1> Completion rate <img class="completion-rate completion-img" src="images/Like-icon.png" width="15%" height="15%" alt="Completed Icon"/>
+						<br />
+
+						<progress value="85" max="100">\</progress>
+						<br />
+
+						<p class="in-a-row">15 in a row!</p>
+
+						<p class="record">Record = 15</p>
+					</div>
+				</div>
+
+				<div class="col3">
+					<span class="time-icon time-icon-active">1</span>
+					<span class="time-icon ">2</span>
+					<span class="time-icon ">3</span>
+					<br />
+					<img class="edit-habit-arrow" src="images/left-arrow-icon.png" width="35%" height="35%">
+					<!-- Edit and Delete -->
+					<div class="edit-habit">
+						<a class="edit-habit-btn" href="edithabit.html"><img src="images/edit-icon.png" width="50px" height="50px" alt="Edit"></a>
+						<img class="delete-habit-but" src="images/delete-icon.png" width="50px" height="50px" alt="Delete">
+					</div>
+					
+				</div>
+
+				<div class="clearfix"></div>
+				<hr />
+
+
+
+
+
+				<div class="habit">
+				<div class="col1">
+					<h4>Go to the Gym</h4>
+
+					<img  height="90%" width="90%" src="images/gym.png" alt="Habit Icon"/>
+				</div>
+
+				<div class="col2">
+
+					<div class="completed-failed-buts">
+						<img class="completed-but" src="images/Like-icon.png" width="35%" height="35%" alt="Completed"/>
+						<img class="failed-but"src="images/Dislike-icon.png"  width="35%" height="35%" alt="Failed"/>
+					</div>
+
+					<!-- Completion rate -->
+					<div class="completion-stats">
+						<h1 class="completion-rate">##%</h1> Completion rate <img class="completion-rate completion-img" src="images/Like-icon.png" width="15%" height="15%" alt="Completed Icon"/>
+						<br />
+
+						<progress value="85" max="100">\</progress>
+						<br />
+
+						<p class="in-a-row">15 in a row!</p>
+
+						<p class="record">Record = 15</p>
+					</div>
+				</div>
+
+				<div class="col3">
+					<span class="time-icon time-icon-active">1</span>
+					<span class="time-icon ">2</span>
+					<br />
+					<img class="edit-habit-arrow" src="images/left-arrow-icon.png" width="35%" height="35%">
+					<!-- Edit and Delete -->
+					<div class="edit-habit">
+						<a class="edit-habit-btn" href="edithabit.html"><img src="images/edit-icon.png" width="50px" height="50px" alt="Edit"></a>
+						<img class="delete-habit-but" src="images/delete-icon.png" width="50px" height="50px" alt="Delete">
+					</div>
+					
+				</div>
+
+				<div class="clearfix"></div>
+				<hr />
+
+
+
+
+				<div class="habit">
+				<div class="col1">
+					<h4>Don't spend too much Money</h4>
+
+					<img  height="90%" width="90%" src="images/money.png" alt="Habit Icon"/>
 				</div>
 
 				<div class="col2">
@@ -74,8 +170,8 @@
         
          <script type="text/javascript">
             $('.completed-but').click(function() {  
-                $('.completed-failed-buts').hide();
-                $('.completion-stats').show(); 
+                $(this).parents('.completed-failed-buts').hide();
+                $(this).parent().siblings('.completion-stats').show(); 
             });
 
             $('.failed-but').click(function() {  
