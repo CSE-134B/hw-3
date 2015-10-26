@@ -277,24 +277,22 @@ body
 
 /*-- habits.html stylesheet ---*/
 
-.completion-stats{
-	margin-top:10%;
-}
 .completion-stats > p{
 	display:inline;
 }
 
-.completed-failed-buts{
-	margin-top:10%;
-}
+.edit-habit{
 
-.edit-habit > a{
-	display:inline;
 }
 
 .add-habit-btn{
 	margin: auto auto;
     display: block;
+    background-image: url("images/plus1.png");
+}
+
+.add-habit-btn:hover{
+    background-image: url("images/plus1-hover.png");
 }
 
 .time-icon {
@@ -319,30 +317,6 @@ body
 	border-width:1px;
 }
 
-.col1{
-	float: left;
-    width: 20%
-}
+@media only screen and (max-width: 480px) {
 
-.col2{
-	float: left;
-    width: 50%;
-}
-
-.col3{
-	float:left;
-	width:20%;
-}
-
-.record{
-	float:right;
-	margin-right: 20%;
-}
-
-.in-a-row{
-	float:left;
-}
-
-.completion-rate{
-	display:inline;
-}
+	}
