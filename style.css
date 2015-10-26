@@ -1,12 +1,14 @@
 html {margin-top: 0;}
+
+* {
+	margin: 0;
+}
 body
 {
-/*	width: 80%;*/
     width: 100%;
     height: auto;
-/*	margin: auto auto;*/
     margin: 0;
-    padding: 0;
+    padding: 0; 
 	font-family: 'Raleway', Tahoma, Geneva, sans-serif;
 }
 .container {
@@ -108,6 +110,7 @@ body
     color: black;
     font-size: 30px;
 }
+
 @media only screen and (max-width: 480px) {
     .savehabit-btn > a { font-size: 20px; }
 }
@@ -131,7 +134,8 @@ body
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
-	cursor: pointer;   
+	cursor: pointer;  
+	line-height: 60px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -173,6 +177,7 @@ body
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	cursor: pointer;
+	line-height: 60px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -225,7 +230,7 @@ body
 #appName {
 	text-align: center;
 	font-family: Georgia, serif;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 #description {
