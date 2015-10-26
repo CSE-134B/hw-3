@@ -119,8 +119,8 @@ body
     .savehabit-btn > a > p { padding-left: 40px; }
 }
 .day-btn {
-	width: 70px;
-    height: 70px;
+	width: 60px;
+    height: 60px;
 	float: left;
 	margin: 10px;
     padding: 5px;
@@ -160,8 +160,8 @@ body
 }
 
 .time-btn {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 	float: left;
 	margin: 15px;
     padding: 5px;
