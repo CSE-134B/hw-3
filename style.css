@@ -288,11 +288,6 @@ body
 .add-habit-btn{
 	margin: auto auto;
     display: block;
-    background-image: url("images/plus1.png");
-}
-
-.add-habit-btn:hover{
-    background-image: url("images/plus1-hover.png");
 }
 
 .time-icon {
