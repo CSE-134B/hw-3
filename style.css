@@ -346,3 +346,10 @@ body
 .completion-rate{
 	display:inline;
 }
+
+#icon input{
+    max-height: 80px;
+    max-width: 80px;
+    height: 10%;
+    width: 10%;
+}
