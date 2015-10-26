@@ -29,13 +29,15 @@
 				</div>
 
 				<div class="col2">
-					<img src="images/Like-icon.png" width="125px" height="125px" alt="Completed"/>
 
-					<img src="images/Dislike-icon.png"  width="125px" height="125px" alt="Failed"/>
+					<div class="completed-failed-buts">
+						<img class="completed-but" src="images/Like-icon.png" width="125px" height="125px" alt="Completed"/>
+						<img class="failed-but"src="images/Dislike-icon.png"  width="125px" height="125px" alt="Failed"/>
+					</div>
 
 					<!-- Completion rate -->
 					<div class="completion-stats">
-						<h1>##%</h1>Completion rate <img src="images/Like-icon.png" width="75px" height="75px" alt="Completed Icon"/>
+						<h1 class="completion-rate">##%</h1> Completion rate <img class="completion-rate completion-img" src="images/Like-icon.png" width="50px" height="50px" alt="Completed Icon"/>
 						<br />
 
 						<progress value="85" max="100">\</progress>
@@ -63,22 +65,20 @@
 			</div>
 
 
-			<a class="add-habit-btn" href="addhabit.html"><img src="images/plus1.png" height="10%" width="10%" alt="Add Habit"></a>
+			<a class="add-habit-btn" href="addhabit.html"><img src="images/plus1.png" height="8%" width="8%" alt="Add Habit"></a>
 
 		</div>
 		 <script src="lib/jquery-1.11.3.min.js"></script>
         
          <script type="text/javascript">
-            $('.time-btn').click(function() {  
-                $('.time-btn').not(this).removeClass('buttonactive');
-                $(this).toggleClass('buttonactive'); 
+            $('.completed-but').click(function() {  
+                $('.completed-failed-buts').hide();
+                $('.completion-stats').show(); 
             });
         	
         	$(document).ready(function(){
-            $('.day-btn').click(function() {       
-                $(this).toggleClass('buttonactive');
-            });
-        }); 
+        		$('.completion-stats').hide();
+        	}); 
         </script>
 	</body>
 
