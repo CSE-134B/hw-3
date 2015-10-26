@@ -47,8 +47,8 @@ body
 .savehabit-btn {
     background: gray; 
     padding: 10px; 
-    height: 25px; 
-    width: 200px;  
+    height: 35px; 
+    width: 250px;  
     margin: auto;
 }
 
@@ -59,14 +59,24 @@ body
     height: 15px; 
     width: 125px;  
     margin: auto;
-}  
+  }  
 }
 
 .savehabit-btn > a {
     text-decoration: none;
     color: black;
+    font-size: 30px;
+}
+@media only screen and (max-width: 480px) {
+    .savehabit-btn > a { font-size: 20px; }
 }
 
+.savehabit-btn > a > p {
+    padding-left: 75px;
+}
+@media only screen and (max-width: 480px) {
+    .savehabit-btn > a > p { padding-left: 40px; }
+}
 .day-btn {
 	width: 70px;
     height: 70px;
