@@ -366,6 +366,16 @@ body
 	display:inline;
 }
 
+#habittitle{
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+    margin-bottom: 2%
+}
+#icon {
+    padding-bottom: 10px; 
+    padding-top: 10px; 
+    margin-bottom: 2%
+}
 
 #icon input{
     max-height: 80px;
