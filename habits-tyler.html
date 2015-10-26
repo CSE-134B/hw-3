@@ -53,12 +53,19 @@
 					<span class="time-icon time-icon-active">1</span>
 					<span class="time-icon ">2</span>
 					<br />
+					<img class="edit-habit-arrow" src="images/left-arrow-icon.png" width="35%" height="35%">
 					<!-- Edit and Delete -->
+
 					<div class="edit-habit" style="display: inline-block">
 						<a class="edit-habit-btn" href="edithabit.html"><img src="images/edit-icon.png" width="50px" height="50px" alt="Edit" style="padding-right: 10px"></a>
 						<a href="#"><img src="images/delete-icon.png" width="50px" height="50px" alt="Delete"></a>
+
+					<div class="edit-habit">
+						<a class="edit-habit-btn" href="#"><img src="images/edit-icon.png" width="50px" height="50px" alt="Edit"></a>
+						<img class="delete-habit-but" src="images/delete-icon.png" width="50px" height="50px" alt="Delete">
+
 					</div>
-					<img class="edit-habit-arrow" src="images/left-arrow-icon.png" width="35%" height="35%">
+					
 				</div>
 
 				<div class="clearfix"></div>
@@ -77,8 +84,19 @@
                 $('.completion-stats').show(); 
             });
 
+            $('.failed-but').click(function() {  
+                $('.completed-failed-buts').hide();
+                $('.completion-stats').show(); 
+            });
+
+            $('.delete-habit-but').click(function(){
+            	$(this).parents('.habit').hide();
+            });
+
+
+
             $('.edit-habit-arrow').click(function(){
-            	$('.edit-habit').show();
+            	$(this).siblings('.edit-habit').show();
             	$(this).hide();
             });
 
